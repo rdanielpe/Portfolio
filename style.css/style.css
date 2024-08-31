@@ -1,0 +1,330 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+}
+
+body {
+  background-color: #0f0227;
+  color: white;
+  font-family: "Montserrat", system-ui;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  color: white;
+  justify-content: space-evenly;
+  padding: 2rem 1rem;
+  background-color: #140c2c;
+  gap: 1rem;
+  font-weight: 500;
+}
+
+.left {
+  color: white;
+  gap: 3rem;
+  font-size: 1.8rem;
+  font-weight: 300;
+}
+
+.code {
+  font-size: 3rem;
+  color: #d0ff00;
+  font-weight: 500;
+}
+
+li {
+  list-style-type: none;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+  padding: 2.9rem 4rem;
+}
+
+.link:hover {
+  background-color: #1f1335;
+  color: white;
+}
+
+.right {
+  gap: 4rem;
+}
+
+.portada {
+  display: flex;
+  gap: 20rem;
+  margin-top: 10rem;
+  max-width: 120rem;
+  margin-bottom: 12rem;
+}
+
+.boton {
+  color: white;
+  padding: 1.5rem 2.5rem;
+  background-color: #1f1335;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.boton:hover {
+  background-color: #140c2c;
+  border: 1px solid white;
+}
+
+.container_foto {
+  display: flex;
+  align-items: center;
+}
+
+.foto {
+  border-radius: 50%;
+  width: 25rem;
+}
+
+.danielito {
+  display: flex;
+  justify-content: center;
+}
+
+.descripcion {
+  max-width: 70rem;
+}
+
+.descripcion h1 {
+  font-size: 8rem;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.descripcion h2 {
+  color: #d0ff00;
+  font-size: 2.5rem;
+  margin-top: 0.5rem;
+}
+
+.descripcion p {
+  font-size: 1.7rem;
+  margin-top: 8rem;
+  margin-bottom: 4rem;
+  font-weight: 200;
+  line-height: 2.4rem;
+}
+
+.skill {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  margin-bottom: 8rem;
+}
+
+.tecnologias {
+  display: flex;
+  align-items: center;
+  gap: 5rem;
+}
+
+.skills img {
+  height: 5rem;
+}
+.skill h3{
+  font-size: 1.4rem;
+  margin-top: 0.3rem;
+  font-weight: 400;
+}
+
+
+.typing-container {
+  position: absolute;
+  width: max-content; /* Ajusta el ancho automáticamente basado en el contenido */
+  white-space: nowrap;
+  overflow: hidden;
+  font-family: monospace;
+  font-size: 2.5rem; /* Ajusta el tamaño de la fuente según sea necesario */
+}
+
+.typing-text {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  opacity: 0; /* El texto está oculto inicialmente */
+  visibility: hidden; /* El texto está oculto inicialmente */
+  white-space: nowrap;
+  transition: opacity 0.1s ease, visibility 0.1s ease; /* Transiciones suaves */
+}
+
+.typing-text.visible {
+  opacity: 1; /* El texto es visible */
+  visibility: visible; /* El texto es visible */
+}
+
+
+
+.proyectos h2 {
+  margin-top: 10rem;
+  color: #d0ff00;
+  font-size: 3.5rem;
+  text-align: center;
+  font-family: "Montserrat", system-ui;
+}
+.container_proyecto {
+  margin-top: 20rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas para la primera fila */
+  grid-template-rows: auto auto; /* 2 filas */
+  gap: 100px; /* Espacio entre las cards */
+}
+.skills_proyecto {
+  padding: 2rem 1.5rem;
+  width: 3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.card:nth-child(1) {
+  grid-column: 1; /* Primera card en la primera columna */
+}
+
+.card:nth-child(2) {
+  grid-column: 2; /* Segunda card en la segunda columna */
+}
+
+.card:nth-child(3) {
+  grid-column: 3; /* Tercera card en la tercera columna */
+}
+
+/* Estilo para la segunda fila */
+.card:nth-child(4) {
+  grid-column: auto
+; /* Cuarta card centrada, comienza en la segunda columna */
+
+}
+
+.card:nth-child(5) {
+  grid-column: 3; /* Quinta card centrada, en la tercera columna */
+}
+
+.card {
+  background-color: #1F1335;
+  width:33.1rem ;
+  height: 43rem;
+  border-radius: 2rem;
+  border: 1px solid rgb(78, 76, 76);
+
+}
+.card p {
+  margin-top: 0.2rem;
+  padding: 0 1.5rem;
+  font-size: 1.4rem;
+}
+.proyect {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  height: 100vh; /* Ocupa toda la altura de la pantalla */
+}
+
+
+.about {
+  margin-top: 20rem;
+  background-color:#301E3F ;
+  width: auto;
+  height: 100rem;
+
+}
+
+
+
+
+.container-contacto {
+  font-family: "Montserrat", system-ui;
+  margin-top: 10rem;
+}
+.container-contacto h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+  font-size: 3rem;
+}
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  gap: 20rem;
+  align-items: center;
+}
+
+.img-contacto {
+  width: 40rem;
+  height: auto;
+}
+
+
+.campo {
+  margin-bottom: 1rem;
+}
+.campo label {
+  color: white;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  display: block;
+  font-size: 1.5rem;
+}
+.input-text {
+  width: 35rem;
+  height: auto;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: #1F1335;
+  color: white;
+}
+.input-text-area {
+  width: 35rem;
+  height: 15rem;
+  border: none;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: #1F1335;
+  color: white;
+  margin-bottom: 3rem;
+}
+.enviar .button {
+  width: 100%;
+}
+
+.campo-left {
+  max-width: 100rem;
+}
+
+.boton-contacto {
+  text-align: center;
+  color: white;
+  padding: 1.5rem 2.5rem;
+  background-color: #1f1335;
+  font-size: 1.8rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.boton-contacto:hover {
+  background-color: #140c2c;
+  border: 1px solid white;
+}
+
+footer {
+  margin-top: 10rem;
+  padding: 5rem;
+  border: 1px solid white;
+}
